@@ -52,13 +52,11 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" href="image/about.jpg" style="border-radius: 50%;">
  
-    <title>rafii.com | register</title>
+    <title>Niagahoster Register</title>
 </head>
-<body style="background-color: red;">
+<body>
     <div class="container">
-    <center><img src="../image/about.jpg" width="100px" style="border-radius: 50%;"></center>
         <form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
             <div class="input-group">

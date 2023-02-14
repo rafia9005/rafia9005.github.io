@@ -10,7 +10,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-image:url(../image/bg.png) ;
+    background-image: url(../img/home/1.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -46,7 +46,7 @@ body {
 .container .login-email .input-group input {
     width: 100%;
     height: 100%;
-    border: 2px solid #000000;
+    border: 2px solid #e7e7e7;
     padding: 15px 20px;
     font-size: 1rem;
     border-radius: 30px;
@@ -56,7 +56,7 @@ body {
 }
  
 .container .login-email .input-group input:focus, .container .login-email .input-group input:valid {
-    border-color: #000000;
+    border-color: #a29bfe;
 }
  
 .container .login-email .input-group .btn {
@@ -65,7 +65,7 @@ body {
     padding: 15px 20px;
     text-align: center;
     border: none;
-    background: #000000;
+    background: #a29bfe;
     outline: none;
     border-radius: 30px;
     font-size: 1.2rem;
@@ -76,17 +76,17 @@ body {
  
 .container .login-email .input-group .btn:hover {
     transform: translateY(-5px);
-    background: #000000;
+    background: #6c5ce7;
 }
  
 .login-register-text {
-    color: rgb(0, 0, 0);
+    color: #111;
     font-weight: 600;
 }
  
 .login-register-text a {
     text-decoration: none;
-    color: #0051ff;
+    color: #6c5ce7;
 }
  
 .container-logout {
@@ -116,7 +116,7 @@ body {
  
 .container-logout .login-email .input-group .btn:hover {
     transform: translateY(-5px);
-    background: #000000;
+    background: #6c5ce7;
 }
  
 @media (max-width: 430px) {

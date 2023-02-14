@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
         $_SESSION['username'] = $row['username'];
         header("Location: berhasil_login.php");
     } else {
-        echo "<script>alert('LOGIN GAGAL PASSWORD ATAU EMAIL ANDA SALAH')</script>";
+        echo "<script>alert('Email atau password Anda salah. Silahkan coba lagi!')</script>";
     }
 }
  
@@ -33,20 +33,18 @@ if (isset($_POST['submit'])) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.cs">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
     <link rel="stylesheet" type="text/css" href="style.css">
- 
-    <title>rafii.com | Login</title>
-    <link rel="shortcut icon" href="image/about.jpg" style="border-radius: 50%;">
+    <link rel="shortcut icon" href="../home.ico" type="image/x-icon">
+    <title>LOGIN | ADMIN</title>
 </head>
-<body style="background-color: red;">
+<body>
     <div class="alert alert-warning" role="alert">
         <?php echo $_SESSION['error']?>
     </div>
  
     <div class="container">
-        <center><img src="../image/about.jpg" width="100px" style="border-radius: 50%;"></center>
         <form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
             <div class="input-group">
@@ -58,8 +56,6 @@ if (isset($_POST['submit'])) {
             <div class="input-group">
                 <button name="submit" class="btn">Login</button>
             </div>
-            <p class="login-register-text">Anda belum punya akun? <a href="register.php">Register</a></p>
-            <p class="login-register-text" style="margin-top: 10px; text-align:center;"><a href="../index.html">Home</a></p>
         </form>
     </div>
 </body>

@@ -55,7 +55,7 @@ if (isset($_POST['submit'])) {
  
     <title>Niagahoster Register</title>
 </head>
-<body>
+<body style="background-image: url(../img/home/background.jpg);">
     <div class="container">
         <form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
@@ -74,7 +74,7 @@ if (isset($_POST['submit'])) {
             <div class="input-group">
                 <button name="submit" class="btn">Register</button>
             </div>
-            <p class="login-register-text">Anda sudah punya akun? <a href="index.php">Login </a></p>
+            <p style="text-align: center;">Do You have Account? <a href="index.php"  style="text-decoration: none;">Login </a></p>
         </form>
     </div>
 </body>

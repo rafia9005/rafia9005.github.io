@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="home.ico" />
+    
+    
+    <title>rafii site</title>
+  </head>
+  <body>
+    <!-- START -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="#" style="text-decoration: none">rafii site</a>
+        </div>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="#" class="action_btn" style="text-decoration: none"
+          >Get Started</a
+        >
+        <div class="toggle_btn">
+          <i class="fa-regular fa-bars">|||</i>
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <a href="#" class="action_btn" style="text-decoration: none"
+            >Get Started</a
+          >
+        </li>
+      </div>
+	  <div class="container">
+		<h3 style="color:white;" class="title">Hi, Saya Ahmad Rafi</h3>
+		<h4 class="dev">Junior Front End</h4>
+		<center><a href="#" class="read">Read Me</a></center>
+	  </div>
+    </header>
+	<!-- MAIN -->
+	<main class="content">
+
+	</main>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function (perams) {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-regular fa-xmark"
+          : "fa-regular fa-bars";
+      };
+    </script>
+  </body>
+</html>

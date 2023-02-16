@@ -6,18 +6,22 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
- 
+.login-button li a{
+    text-decoration: none;
+    border: 1px;
+    background-color: orange;
+}
 body {
     width: 100%;
     min-height: 100vh;
-    background-image: url(../img/home/1.jpg);
+    background-image: url(../img/home/background.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
- 
+
 .container {
     width: 400px;
     min-height: 400px;
@@ -77,16 +81,6 @@ body {
 .container .login-email .input-group .btn:hover {
     transform: translateY(-5px);
     background: #6c5ce7;
-}
- 
-.login-register-text {
-    color: #111;
-    font-weight: 600;
-}
- 
-.login-register-text a {
-    text-decoration: none;
-    color: #6c5ce7;
 }
  
 .container-logout {

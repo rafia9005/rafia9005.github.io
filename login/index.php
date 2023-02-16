@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {
     <link rel="shortcut icon" href="../home.ico" type="image/x-icon">
     <title>LOGIN | ADMIN</title>
 </head>
-<body>
+<body style="background-image: url(../img/home/background.jpg);">
     <div class="alert alert-warning" role="alert">
         <?php echo $_SESSION['error']?>
     </div>
@@ -57,6 +57,9 @@ if (isset($_POST['submit'])) {
                 <button name="submit" class="btn">Login</button>
             </div>
         </form>
+        <center>
+            <span class="create">Dont Have Account ? <a href="register.php" style="text-decoration: none;">Create Account</a></span>
+        </center>
     </div>
 </body>
 </html>
